@@ -1,0 +1,685 @@
+/* =========================================
+   SPORTS EQUIPMENT STORE
+   External CSS
+   ========================================= */
+
+/* ---------- Global Styles ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #eef7ff, #f8fbff);
+    color: #222;
+    min-height: 100vh;
+}
+
+
+/* ---------- Header ---------- */
+
+.header {
+    text-align: center;
+    padding: 35px 20px;
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+
+    border-bottom: none;
+
+    animation: headerAnimation 0.8s ease;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #dff6ff;
+}
+
+
+/* ---------- Navigation Menu ---------- */
+
+.menu {
+    text-align: center;
+    padding: 18px 10px;
+    background: white;
+    border-bottom: none;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 0 18px;
+    padding: 8px 4px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #203a43;
+
+    display: inline-block;
+    position: relative;
+
+    transition: all 0.3s ease;
+}
+
+/* Animated underline */
+
+.menu a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 3px;
+
+    background: #ff6b35;
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ff6b35;
+    transform: translateY(-2px);
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================================
+   INDEX / HOME PAGE
+   ========================================= */
+
+.content {
+    width: 80%;
+    max-width: 1100px;
+
+    margin: 45px auto;
+    padding: 30px;
+
+    background: transparent;
+
+    animation: fadeUp 0.8s ease;
+}
+
+.content h2 {
+    color: #203a43;
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Home page list */
+
+.content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 35px;
+}
+
+.content li {
+    background: white;
+
+    margin: 12px 0;
+    padding: 15px 20px;
+
+    border-left: 5px solid #ff6b35;
+    border-radius: 8px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+.content li:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ---------- Tables ---------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    background: white;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background: linear-gradient(
+        135deg,
+        #203a43,
+        #2c5364
+    );
+
+    color: white;
+
+    padding: 15px;
+    text-align: center;
+
+    font-size: 16px;
+}
+
+td {
+    padding: 13px;
+    text-align: center;
+
+    color: #444;
+}
+
+/* Table row animation */
+
+tr {
+    transition: all 0.3s ease;
+}
+
+tbody tr:hover {
+    background: #eef8ff;
+    transform: scale(1.01);
+}
+
+
+/* =========================================
+   LOGIN PAGE
+   ========================================= */
+
+.login {
+    width: 500px;
+    max-width: 90%;
+
+    margin: 50px auto;
+
+    background: white;
+
+    border: none;
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+
+    animation: fadeUp 0.8s ease;
+}
+
+.login h2 {
+    text-align: center;
+
+    color: #203a43;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+.login table {
+    box-shadow: none;
+    border: none;
+}
+
+.login td {
+    border: none;
+    padding: 10px;
+}
+
+.login td:first-child {
+    font-weight: bold;
+    color: #444;
+}
+
+
+/* =========================================
+   FORM INPUTS
+   ========================================= */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 8px;
+
+    background: #fafafa;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Input focus animation */
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #2c5364;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px rgba(44, 83, 100, 0.12);
+
+    transform: translateY(-1px);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.button {
+    width: 120px;
+
+    padding: 12px 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    margin: 5px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Login / Register button */
+
+input[type="submit"] {
+    background: linear-gradient(
+        135deg,
+        #ff6b35,
+        #ff8c42
+    );
+
+    color: white;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(255, 107, 53, 0.35);
+}
+
+
+/* Clear button */
+
+input[type="reset"] {
+    background: #e9ecef;
+    color: #333;
+}
+
+input[type="reset"]:hover {
+    background: #d6d9dc;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Login registration link */
+
+.login p {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #555;
+}
+
+.login a {
+    color: #ff6b35;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.login a:hover {
+    color: #203a43;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   CATALOGUE PAGE
+   ========================================= */
+
+/* Catalogue heading */
+
+body > h2 {
+    text-align: center;
+
+    color: #203a43;
+
+    font-size: 32px;
+
+    margin-top: 45px;
+
+    animation: fadeUp 0.7s ease;
+}
+
+
+/* Catalogue table */
+
+body > table {
+    width: 90%;
+
+    margin: 30px auto;
+
+    animation: fadeUp 0.9s ease;
+}
+
+
+/* Price */
+
+td:nth-child(4) {
+    color: #ff6b35;
+    font-weight: bold;
+}
+
+
+/* Stock */
+
+td:last-child {
+    color: #16a085;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   REGISTRATION PAGE
+   ========================================= */
+
+.form {
+    width: 650px;
+    max-width: 92%;
+
+    margin: 45px auto;
+
+    background: white;
+
+    border: none;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+
+    animation: fadeUp 0.8s ease;
+}
+
+.form h2 {
+    text-align: center;
+
+    color: #203a43;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+.form table {
+    box-shadow: none;
+    border: none;
+}
+
+.form td {
+    border: none;
+    padding: 9px;
+}
+
+.form td:first-child {
+    width: 35%;
+
+    font-weight: bold;
+
+    color: #444;
+}
+
+
+/* Radio buttons */
+
+input[type="radio"] {
+    width: auto !important;
+
+    margin-right: 5px;
+
+    accent-color: #ff6b35;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+    text-align: center;
+
+    color: white;
+
+    background: #0f2027;
+
+    margin-top: 50px;
+
+    padding: 22px;
+
+    border-top: none;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes headerAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .menu a {
+        margin: 5px 8px;
+        font-size: 15px;
+    }
+
+    .content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form,
+    .login {
+        width: 90%;
+    }
+
+    body > table {
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 28px 15px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    .menu {
+        padding: 12px 5px;
+    }
+
+    .menu a {
+        margin: 4px 6px;
+        font-size: 13px;
+    }
+
+    .content {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .login,
+    .form {
+        width: 94%;
+        padding: 22px 15px;
+    }
+
+    .login td,
+    .form td {
+        display: block;
+        width: 100% !important;
+    }
+
+    .login td:first-child,
+    .form td:first-child {
+        padding-bottom: 4px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 9px 5px;
+    }
+
+    body > table {
+        overflow-x: auto;
+    }
+}
+
+
+/* =========================================
+   REDUCED MOTION ACCESSIBILITY
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
