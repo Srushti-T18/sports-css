@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Registration</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+}
+
+.header{
+text-align:center;
+padding:20px;
+border-bottom:2px solid black;
+}
+
+.menu{
+text-align:center;
+padding:15px;
+border-bottom:1px solid black;
+}
+
+.menu a{
+text-decoration:none;
+margin:20px;
+font-size:20px;
+font-weight:bold;
+color:black;
+}
+
+.form{
+width:650px;
+margin:30px auto;
+border:1px solid black;
+padding:25px;
+}
+
+table{
+width:100%;
+}
+
+td{
+padding:10px;
+}
+
+input,textarea,select{
+width:100%;
+padding:8px;
+}
+
+.button{
+width:130px;
+}
+
+.footer{
+text-align:center;
+padding:20px;
+border-top:2px solid black;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+<h1>SPORTS EQUIPMENT STORE</h1>
+</div>
+
+<div class="menu">
+<a href="index.html">Home</a>
+<a href="login.html">Login</a>
+<a href="catalogue.html">Catalogue</a>
+<a href="registration.html">Registration</a>
+</div>
+
+<div class="form">
+
+<h2 align="center">Registration Form</h2>
+
+<form>
+
+<table>
+
+<tr><td>First Name</td><td><input type="text"></td></tr>
+<tr><td>Last Name</td><td><input type="text"></td></tr>
+<tr><td>Email</td><td><input type="email"></td></tr>
+<tr><td>Phone</td><td><input type="tel"></td></tr>
+<tr><td>Date of Birth</td><td><input type="date"></td></tr>
+
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="g" style="width:auto;"> Male
+<input type="radio" name="g" style="width:auto;"> Female
+</td>
+</tr>
+
+<tr><td>Address</td><td><textarea rows="4"></textarea></td></tr>
+
+<tr>
+<td>Favorite Sport</td>
+<td>
+<select>
+<option>Cricket</option>
+<option>Football</option>
+<option>Basketball</option>
+<option>Tennis</option>
+<option>Badminton</option>
+</select>
+</td>
+</tr>
+
+<tr><td>Username</td><td><input type="text"></td></tr>
+<tr><td>Password</td><td><input type="password"></td></tr>
+<tr><td>Confirm Password</td><td><input type="password"></td></tr>
+
+<tr>
+<td colspan="2" align="center">
+<input class="button" type="submit" value="Register">
+<input class="button" type="reset" value="Clear">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</div>
+
+<div class="footer">
+Sports Equipment Store
+</div>
+
+</body>
+</html>
